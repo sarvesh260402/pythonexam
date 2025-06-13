@@ -1,0 +1,28 @@
+#demonstration 2:-
+# create a pyhtine program to simulate elliptical orbit
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = 7
+b = 8
+
+
+theta = np.linspace(0, 2 * np.pi, 1000)
+x = a * np.cos(theta)
+y = b * np.sin(theta)
+
+plt.plot(x, y, label="elliptical orbit")
+plt.plot(0, 0, 'yo', label="focus (sun)")
+
+plt.title("Elliptical Orbit Simulation")
+plt.xlabel("x position (AU)")
+plt.ylabel("y position (AU)")
+plt.grid(True)
+plt.gca().set_aspect('equal', adjustable='box')
+plt.legend()
+plt.show()
+
+
+
+------------------output---------------------
