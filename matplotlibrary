@@ -1,0 +1,17 @@
+#Demonstration 3:-
+# create a pyhton program to draw a line using matplot library
+
+import matplotlib.pyplot as plt
+
+
+x = [5, 10]
+y = [0, 10]
+
+plt.plot(x, y, label='y = x', color='blue', linewidth=2)
+plt.title('Simple Line Plot')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.legend()
+plt.grid(True)
+plt.show()
+---------------output---------------
